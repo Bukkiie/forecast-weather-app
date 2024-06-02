@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather Forecast App</title>
   </head>
@@ -30,75 +30,24 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city" id="city">Coventry</h1>
+            <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details">
-              <span id="time">Monday 19:16</span>,
-              <span id="description">Rain</span>
+              <span id="time"></span>,
+              <span id="description"></span>
               <br />
-              Humidity: <strong id="humidity">82%</strong>, Wind:<strong
+              Humidity: <strong id="humidity"></strong>, Wind:<strong
                 id="wind-speed"
                 >11km/h</strong
               >
             </p>
           </div>
           <div class="weather-app-temperature-container">
-            <div id="icon">🌧</div>
-            <div class="weather-app-temperature" id="temperature">12</div>
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
             <div class="weather-app-unit">°C</div>
           </div>
         </div>
-        <div class="weather-forecast">
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Tue</div>
-            <div class="weather-forecast-icon">🌧</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>17º</strong>
-              </div>
-              <div class="weather-forecast-temperature">11º</div>
-            </div>
-          </div>
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Wed</div>
-            <div class="weather-forecast-icon">🌤</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>17º</strong>
-              </div>
-              <div class="weather-forecast-temperature">10º</div>
-            </div>
-          </div>
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Thur</div>
-            <div class="weather-forecast-icon">🌧</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>16º</strong>
-              </div>
-              <div class="weather-forecast-temperature">10º</div>
-            </div>
-          </div>
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Fri</div>
-            <div class="weather-forecast-icon">🌤</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>17º</strong>
-              </div>
-              <div class="weather-forecast-temperature">8º</div>
-            </div>
-          </div>
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Sat</div>
-            <div class="weather-forecast-icon">🌤</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>17º</strong>
-              </div>
-              <div class="weather-forecast-temperature">9º</div>
-            </div>
-          </div>
-        </div>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
 
       <footer>
