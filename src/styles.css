@@ -1,36 +1,24 @@
 body {
-  background-color: lightpink;
+  background-color: #f9f7fe;
   font-family: "Roboto", sans-serif;
 }
 
-header {
-  border-bottom: 1px solid #f9f7fe;
-  padding: 0 0 30px 0;
-}
-
-main {
-  padding: 30px 0;
-}
-
-footer {
-  border-top: 1px solid #f9f7fe;
-  padding: 30px 0 0 0;
-  text-align: center;
-  font-size: 13px;
-  color: rgba(0, 0, 0, 0.6);
-}
-
 a {
-  color: purple;
+  color: #885df1;
 }
 
 .weather-app {
   background: white;
   max-width: 600px;
   margin: 45px auto;
-  padding: 30px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
+  padding: 30px;
+}
+
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 30px 0;
 }
 
 .search-form-input {
@@ -43,13 +31,17 @@ a {
 }
 
 .search-form-button {
-  background: purple;
-  padding: 15px 20px;
-  margin-left: 5px;
-  font-size: 16px;
+  background: #885df1;
+  padding: 15px 30px;
   border: none;
+  font-size: 16px;
+  margin-left: 5px;
   border-radius: 6px;
   color: white;
+}
+
+main {
+  padding: 30px 0;
 }
 
 .weather-app-data {
@@ -65,28 +57,28 @@ a {
 
 .weather-app-details {
   font-size: 16px;
+  color: rgba(39, 33, 66, 0.4);
   line-height: 24px;
-
   font-weight: 500;
 }
 
 .weather-app-details strong {
-  color: palevioletred;
+  color: #f65282;
 }
 
 .weather-app-temperature-container {
   display: flex;
 }
 
-.weather-app-temperature {
-  font-size: 88px;
-  font-weight: bold;
-  line-height: 88px;
-}
-
 .weather-app-icon {
   width: 88px;
   height: 88px;
+}
+
+.weather-app-temperature {
+  font-size: 88px;
+  line-height: 88px;
+  font-weight: bold;
 }
 
 .weather-app-unit {
@@ -114,7 +106,6 @@ a {
   display: block;
   margin: 0 auto;
 }
-
 .weather-forecast-temperatures {
   text-align: center;
   color: #f65282;
@@ -123,6 +114,14 @@ a {
   justify-content: center;
 }
 
-.weather-forcast-temperature {
+.weather-forecast-temperature {
   padding: 0 10px;
+}
+
+footer {
+  border-top: 1px solid #f9f7fe;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
 }
