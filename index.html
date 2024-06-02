@@ -15,53 +15,84 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <h1>Coventry</h1>
-        <p>
-          <span>Monday 19:16</span>,
-          <span>Rain</span>
-          <br />
-          Humidity: <strong>82%</strong>, Wind: <strong>11km/h</strong>
-        </p>
-        <div>
-          <div>🌧</div>
-          <div>12</div>
-          <div>°C</div>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Coventry</h1>
+            <p class="weather-app-details">
+              <span>Monday 19:16</span>,
+              <span>Rain</span>
+              <br />
+              Humidity: <strong>82%</strong>, Wind: <strong>11km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div>🌧</div>
+            <div class="weather-app-tenperature">12</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>
-          <div>Tues</div>
-          <div>🌧</div>
-          <strong>17°</strong>
-          <div>11°</div>
-        </div>
-        <div>
-          <div>Wed</div>
-          <div>⛅</div>
-          <strong>17°</strong>
-          <div>10°</div>
-        </div>
-        <div>
-          <div>Thur</div>
-          <div>🌧</div>
-          <strong>16°</strong>
-          <div>10°</div>
-        </div>
-        <div>
-          <div>Fri</div>
-          <div>⛅</div>
-          <strong>17°</strong>
-          <div>8°</div>
-        </div>
-        <div>
-          <div>Sat</div>
-          <div>⛅</div>
-          <strong>17°</strong>
-          <div>9°</div>
+        <div class="weather-forecast">
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Tues</div>
+            <div class="weather-forecast-icon">🌧</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>17°</strong>
+              </div>
+              <div class="weather-forecast-temperature">11°</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Wed</div>
+            <div class="weather-forecast-icon">⛅</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>17°</strong>
+              </div>
+              <div class="weather-forecast-temperature">10°</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Thur</div>
+            <div class="weather-forecast-icon">🌧</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>16°</strong>
+              </div>
+              <div class="weather-forecast-temperature">10°</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Fri</div>
+            <div class="weather-forecast-icon">⛅</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>17°</strong>
+              </div>
+              <div class="weather-forecast-temperature">8°</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Sat</div>
+            <div class="weather-forecast-icon">⛅</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>17°</strong>
+              </div>
+              <div class="weather-forecast-temperature">9°</div>
+            </div>
+          </div>
         </div>
       </main>
       <footer>
